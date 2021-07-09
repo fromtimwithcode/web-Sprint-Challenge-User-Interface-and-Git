@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+Semantic HTML gives you an easily digestible understanding of what the element is for. For instance, header and footer clearly describe its purpose.
+
 2. Name two big differences between `display: block;` and `display: inline;`.
+
+The two big differences in `display: block;` and `display: inline;` are that block elements take up an entire block (whole line) and inline elements are inline (side by side).
 
 3. What are the 4 areas of the box model?
 
+The 4 areas of the box model are content, padding, border, and margin.
+
 4. While using flexbox, what axis does the following property work on: `align-items: center`?
 
+The property `align-items: center` would work on the cross axis.
+
 5. Explain why git is valuable to a team of developers.
+
+Git is so valuable to a team of developers because it assists in collaboration massively by providing a lot of flexibility when working with teams of all sizes with its version control. In addition to this, it provides options to go back to previous versions of code and see exactly who introduced changes or modified code. Also, Git helps keep source code secure with its use of cryptography throughout the files, commit, etc.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section _will_ prevent you from passing this challenge.
 
@@ -49,12 +59,12 @@ You are expected to be able to answer all these questions. Your responses contri
 - [*] Create a forked copy of this project.
 - [*] Clone your OWN version of the repository (Not Lambda's by mistake!).
 - [*] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push -u origin `<firstName-lastName>`.
+- [*] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [*] Push commits: git push -u origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [*] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
 
 ## Minimum Viable Product
 
