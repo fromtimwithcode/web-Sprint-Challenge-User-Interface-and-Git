@@ -174,15 +174,10 @@ header nav a {
   text-decoration: none;
 }
 
-.jumbo-logo {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
 .top-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   margin-top: 1.5rem;
   margin-bottom: 20px;
   border-bottom: 1px dashed black;
@@ -191,6 +186,13 @@ header nav a {
 .top-content .text-container {
   width: 48%;
   padding: 0 1%;
+  padding-bottom: 20px;
+}
+
+/* Specific to about page */
+.top-content .about-container {
+  padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 20px;
 }
 
@@ -318,6 +320,34 @@ header nav a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.about-content-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.about-content-row div {
+  margin: 10px;
+  border-bottom: 1px dashed black;
+}
+
+.about-content-row h2 {
+  margin-top: 10px;
+}
+
+.about-content-row a {
+  display: flex;
+  flex: column nowrap;
+  justify-content: center;
+  width: 140px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 .bottom-content {
