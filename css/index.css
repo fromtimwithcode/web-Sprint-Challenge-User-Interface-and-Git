@@ -152,10 +152,18 @@ p {
   line-height: 1.4;
 }
 
+/* Page container */
 .container {
   width: 800px;
   margin: 0 auto;
 }
+
+/*
+ * Header Section
+ *  -Navbar logo and links
+ *  -Main images for each page
+ *  -Explainer text
+*/
 
 header {
   display: flex;
@@ -196,6 +204,12 @@ header nav a {
   padding-bottom: 20px;
 }
 
+/* 
+ * Middle content
+ *  -Main page boxes & color
+ *  -About page content sections
+ */
+
 .middle-content {
   margin-bottom: 20px;
   border-bottom: 1px dashed black;
@@ -212,115 +226,65 @@ header nav a {
   justify-content: space-evenly;
 }
 
-.middle-content .boxes .teal-box {
+.middle-content .boxes .box {
   width: 12.5%;
   height: 100px;
+  margin: 20px 2.5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+ * Colored each box with nth-child to save room. With more context or specifics about project,
+ * I'd consider a separate class for each box for easier customization.
+ */
+
+.middle-content .boxes .box:nth-child(1) {
   background: teal;
-  margin: 20px 2.5%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.middle-content .boxes .gold-box {
-  width: 12.5%;
-  height: 100px;
+.middle-content .boxes .box:nth-child(2) {
   background: gold;
-  margin: 20px 2.5%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.middle-content .boxes .cadetblue-box {
-  width: 12.5%;
-  height: 100px;
+.middle-content .boxes .box:nth-child(3) {
   background: cadetblue;
-  margin: 20px 2.5%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.middle-content .boxes .coral-box {
-  width: 12.5%;
-  height: 100px;
+.middle-content .boxes .box:nth-child(4) {
   background: coral;
-  margin: 20px 2.5%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.middle-content .boxes .crimson-box {
-  width: 12.5%;
-  height: 100px;
+.middle-content .boxes .box:nth-child(5) {
   background: crimson;
-  margin: 20px 2.5%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.middle-content .boxes .forestgreen-box {
-  width: 12.5%;
-  height: 100px;
+.middle-content .boxes .box:nth-child(6) {
   background: forestgreen;
-  margin: 20px 2.5%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.middle-content .boxes .darkorchid-box {
-  width: 12.5%;
-  height: 100px;
+.middle-content .boxes .box:nth-child(7) {
   background: darkorchid;
-  margin: 20px 2.5%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.middle-content .boxes .hotpink-box {
-  width: 12.5%;
-  height: 100px;
+.middle-content .boxes .box:nth-child(8) {
   background: hotpink;
-  margin: 20px 2.5%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.middle-content .boxes .indigo-box {
-  width: 12.5%;
-  height: 100px;
+.middle-content .boxes .box:nth-child(9) {
   background: indigo;
-  margin: 20px 2.5%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.middle-content .boxes .dodgerblue-box {
-  width: 12.5%;
-  height: 100px;
+.middle-content .boxes .box:nth-child(10) {
   background: dodgerblue;
-  margin: 20px 2.5%;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
+
+/*
+ * Middle content specific to about.html
+ *  -Styles content rows and content (Strategy, How We Work, Places We Work, Collaboration)
+ */
 
 .about-content-row {
   display: flex;
@@ -350,15 +314,13 @@ header nav a {
   text-decoration: none;
 }
 
+/*
+ * Bottom content
+ */
+
 .bottom-content {
   display: flex;
   margin: 0 2% 20px;
-  justify-content: space-around;
-}
-
-.about-bottom-content {
-  display: flex;
-  margin: 40px 10px;
   justify-content: space-around;
 }
 
@@ -369,6 +331,20 @@ header nav a {
 .bottom-content .text-container:last-child {
   padding-right: 0;
 }
+
+/*
+ * Bottom content specific to about page
+ */
+
+.about-bottom-content {
+  display: flex;
+  margin: 40px 10px;
+  justify-content: space-around;
+}
+
+/*
+ * Footer navigation
+ */
 
 footer {
   width: 100%;
